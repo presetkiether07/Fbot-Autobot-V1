@@ -1,7 +1,7 @@
 module.exports = {
-    name: "id",
+    name: "uid",
     usePrefix: false,
-    usage: "id [@mention]",
+    usage: "uid [@mention]",
     version: "1.0",
     description: "Fetch the Facebook User ID (UID) of a mentioned user or yourself.",
     admin: false,
@@ -22,6 +22,6 @@ module.exports = {
             userName = "You";
         }
         
-        api.sendMessage(`🔍 Facebook UID for ${userName}: ${uid}`, threadID, messageID);
+        api.sendMessage(`🔍 Facebook UID ${userName}: ${uid}`, threadID, messageID);
     }
 };
